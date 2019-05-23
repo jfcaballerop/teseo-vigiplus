@@ -1,6 +1,7 @@
 package com.logesta.teseovigiplus.services;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import com.logesta.teseovigiplus.entity.Empresa;
 
@@ -8,14 +9,10 @@ import com.logesta.teseovigiplus.entity.Empresa;
 public class EmpresaService {
 	
 	public Empresa getEmpresa(String id) {
-		//TODO Get empresa data from another AI REST
-		Empresa emp = new Empresa(
-				"B123456789",
-				"TestEmp", 
-				"Test empresa de test", 
-				"Test empresa de test s.l.", 
-				"594");
-		
+        RestTemplate restTemplate = new RestTemplate();
+        Empresa emp = restTemplate.getForObject(
+        		"http://www.mocky.io/v2/5ce6a42d3300000e00731777", 
+        		Empresa.class);
 		return emp;
 		
 	}
