@@ -1,5 +1,9 @@
 package com.logesta.teseovigiplus.entity;
 
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Empresa {
 	private String cif;
 	private String nombre;
@@ -7,6 +11,9 @@ public class Empresa {
 	private String razon_social;
 	private String id_teseo;
 	
+	public Empresa() {
+		
+	}
 	public Empresa(String cif, String nombre, String nombre_largo, String razon_social, String id_teseo) {
 		super();
 		this.cif = cif;

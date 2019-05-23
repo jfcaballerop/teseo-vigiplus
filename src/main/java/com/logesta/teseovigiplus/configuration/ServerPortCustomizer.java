@@ -10,6 +10,7 @@ public class ServerPortCustomizer
   
     @Override
     public void customize(ConfigurableWebServerFactory factory) {
+    	//TODO set PORT from ENV kubernetes VBLE 
         factory.setPort(9016);
     }
 }
