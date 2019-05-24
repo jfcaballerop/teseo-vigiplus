@@ -2,46 +2,47 @@ package com.logesta.teseovigiplus.entity;
 
 public class Conductor {
 	private String nif;
-	private String Nombre;
-	private String Apellido1;
-	private String Apellido2;
+	private String nombre;
+	private String apellido1;
+	private String apellido2;
 	
 	
 	public Conductor(String nif, String nombre, String apellido1, String apellido2) {
-		super();
 		this.nif = nif;
-		Nombre = nombre;
-		Apellido1 = apellido1;
-		Apellido2 = apellido2;
+		this.nombre = nombre;
+		this.apellido1 = apellido1;
+		this.apellido2 = apellido2;
 	}
+	public Conductor(){}
+
 	@Override
 	public String toString() {
-		return "Conductor [nif=" + nif + ", Nombre=" + Nombre + ", Apellido1=" + Apellido1 + ", Apellido2=" + Apellido2
+		return "Conductor [nif=" + nif + ", nombre=" + nombre + ", apellido1=" + apellido1 + ", apellido2=" + apellido2
 				+ "]";
 	}
 	public String getNif() {
 		return nif;
 	}
 	public String getNombre() {
-		return Nombre;
+		return nombre;
 	}
 	public String getApellido1() {
-		return Apellido1;
+		return apellido1;
 	}
 	public String getApellido2() {
-		return Apellido2;
+		return apellido2;
 	}
 	public void setNif(String nif) {
 		this.nif = nif;
 	}
 	public void setNombre(String nombre) {
-		Nombre = nombre;
+		this.nombre = nombre;
 	}
 	public void setApellido1(String apellido1) {
-		Apellido1 = apellido1;
+		this.apellido1 = apellido1;
 	}
 	public void setApellido2(String apellido2) {
-		Apellido2 = apellido2;
+		this.apellido2 = apellido2;
 	}
 	
 

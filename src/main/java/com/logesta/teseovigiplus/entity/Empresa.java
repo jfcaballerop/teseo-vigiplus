@@ -15,7 +15,6 @@ public class Empresa {
 		
 	}
 	public Empresa(String cif, String nombre, String nombre_largo, String razon_social, String id_teseo) {
-		super();
 		this.cif = cif;
 		this.nombre = nombre;
 		this.nombre_largo = nombre_largo;
