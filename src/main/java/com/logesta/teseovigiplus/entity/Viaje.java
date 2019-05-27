@@ -12,7 +12,8 @@ public class Viaje {
 	private Empresa Transportista;
 	
 
-	public Viaje(String matricula_truck, String matricula_remolque, Conductor[] conductores, String origen,
+	public Viaje(String matricula_truck, String matricula_remolque, 
+			Conductor[] conductores, String origen,
 			String destino, String tipo_mercancia, Empresa transportista) {
 		super();
 		this.matricula_truck = matricula_truck;
