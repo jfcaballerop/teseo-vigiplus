@@ -22,7 +22,7 @@ public class Viajes {
 		Viaje viaje = new Viaje(
 				"E0000AAA", 
 				"E0000RRR", 
-				driverserv.getDrivers("123456798W","123456798W"),
+				driverserv.getDrivers("123456798W"),
 				"TestOrigen", 
 				"Leganes", 
 				"Test Mercancia", 
